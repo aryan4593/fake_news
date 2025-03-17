@@ -5,10 +5,10 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-with open("D:\\ML Models\\Fake_News\\fake_news_detection_trained.sav", "rb") as model_file:
+with open("fake_news_detection_trained.sav", "rb") as model_file:
     model = pickle.load(model_file)
 
-with open("D:\\ML Models\\Fake_News\\tfidf_vectorizer.sav", "rb") as scaler_file:
+with open("tfidf_vectorizer.sav", "rb") as scaler_file:
     scaler = pickle.load(scaler_file)
 
 @app.route("/")
