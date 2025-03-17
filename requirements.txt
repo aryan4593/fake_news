@@ -1,5 +1,6 @@
+Flask
 numpy
 pandas
-matplotlib
-nltk
 scikit-learn
+gunicorn
+requests
