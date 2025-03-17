@@ -4,6 +4,7 @@ import pandas as pd
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+CORS(app)  
 
 with open("fake_news_detection_trained.sav", "rb") as model_file:
     model = pickle.load(model_file)
